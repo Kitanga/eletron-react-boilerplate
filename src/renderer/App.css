@@ -1,0 +1,141 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+
+.App {
+  /* height: 100vh; */
+  width: 100vw;
+}
+:root {
+  --box_shadow: 0px 5px 10px #2224264a;
+  --primary-color: #44ce6f;
+  --primary-color-shadow: 5px 5px 5px #a6f5be;
+  --secondary-color: #c679e3;
+  --secondary-color-shadow: 5px 5px 5px #e9caf5;
+  --tertiary-color: rgb(76, 149, 222);
+  --font-color-dark-dark: #0e314c;
+  --font-color-dark-light: #6084a4;
+
+  --green-gradient: linear-gradient(to right, #d5ff63 0%, #44ce6f 100%);
+  --blue-purple-gradient: linear-gradient(
+    to right top,
+    #d5fefd,
+    #e0fdff,
+    #effbff,
+    #fbfaff,
+    #fffcff
+  );
+  --blue-green-gradient: linear-gradient(
+    to left bottom,
+    #fffcff,
+    #fbfaff,
+    #effbff,
+    #e0fdff,
+    #d5fefd
+  );
+  --green-green-gradient: linear-gradient(135deg, #23bdb8, #43e794);
+  --green-green-gradient-transparent: linear-gradient(
+    135deg,
+    #23bdb869,
+    #43e7946b
+  );
+}
+.label {
+  color: var(--tertiary-color) !important;
+}
+/* .button.ui.red {
+  background-color: var(--primary-color) !important;
+} */
+
+body {
+  position: relative;
+  color: white;
+  height: 100vh;
+  background: white;
+  font-family: sans-serif;
+  overflow: hidden;
+  /* overflow-y: hidden; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+button {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  appearance: none;
+  font-size: 1.3rem;
+  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  transition: all ease-in 0.1s;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+h3 {
+  color: var(--font-color-dark-dark);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  height: fit-content;
+  width: fit-content;
+  margin: 10px;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.Hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+::-webkit-scrollbar {
+  width: 7px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(132, 132, 132) !important;
+  border-radius: 10px !important;
+  display: none !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(175, 9, 9) !important;
+  border-radius: 10px !important;
+  display: none !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #640000 !important;
+  display: none !important;
+}
+.container {
+  max-width: 100% !important;
+}
+i.icon {
+  margin: 0 !important;
+}
+.ui.label > i {
+  margin-left: 7px !important;
+}
